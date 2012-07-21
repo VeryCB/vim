@@ -2,6 +2,13 @@ set number
 "show line numbers
 set nocompatible
 
+set sw=4
+set ts=4
+set sts=4
+set et
+set sta
+" indent format
+
 filetype plugin indent on
 "allow plugin and indent function
 
