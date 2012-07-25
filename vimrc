@@ -1,3 +1,4 @@
+" This is test
 set number
 "show line numbers
 set nocompatible
