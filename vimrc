@@ -21,6 +21,11 @@ set guifont=Monaco:h12
 
 colorscheme molokai
 
+" set for VIM-LATEX
+set grepprg=grep\ -nH\ $*
+let g:tex_flaovr='latex'
+let mapleader=':'
+
 " ######### 自动补全括号、引号 ######### "
 inoremap ( <c-r>=OpenPair('(')<CR>
 inoremap ) <c-r>=ClosePair(')')<CR>
