@@ -1,4 +1,3 @@
-adhadad
 set number
 "show line numbers
 set nocompatible
