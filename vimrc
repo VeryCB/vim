@@ -24,7 +24,7 @@ colorscheme molokai
 " set for VIM-LATEX
 set grepprg=grep\ -nH\ $*
 let g:tex_flaovr='latex'
-let mapleader=':'
+let mapleader='\'
 
 " ######### 自动补全括号、引号 ######### "
 inoremap ( <c-r>=OpenPair('(')<CR>

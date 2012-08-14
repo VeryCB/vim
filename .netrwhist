@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/Calvin/Dropbox/Soton2011/MSc_Project/programme'
 let g:netrw_dirhist_2='/Users/Calvin/Dropbox/soton2011/msc_project/programme/douban_recommendation/recommendation'
+let g:netrw_dirhist_3='/Users/Calvin/Dropbox/Soton2011/MSc_Project/programme/douban_recommendation/templates'
