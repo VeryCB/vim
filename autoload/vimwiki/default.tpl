@@ -7,6 +7,7 @@
 <script type="text/javascript" src="%root_path%scripts/shCore.js"></script> 
 <script type="text/javascript" src="%root_path%scripts/shBrushPython.js"></script>
 <script type="text/javascript" src="%root_path%scripts/shBrushBash.js"></script>
+<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
 <script type="text/javascript">
   SyntaxHighlighter.all();
 </script> 
