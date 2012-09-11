@@ -21,9 +21,13 @@ set guifont=Monaco:h12
 
 colorscheme molokai
 
+" F10 for nerdtree
+nnoremap <silent> <F10> :NERDTreeToggle<CR>
+
 " set for VIM-LATEX
 set grepprg=grep\ -nH\ $*
 let g:tex_flaovr='latex'
+let g:Tex_MultipleCompileFormats='pdf'
 let mapleader='\'
 
 " ######### 自动补全括号、引号 ######### "
