@@ -2,6 +2,16 @@
 set number
 set nocompatible
 
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+Bundle "pangloss/vim-javascript"
+
 " indent format
 set sw=4
 set ts=4
