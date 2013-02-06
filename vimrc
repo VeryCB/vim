@@ -1,13 +1,24 @@
+" show line number
 set number
-"show line numbers
 set nocompatible
 
+" indent format
 set sw=4
 set ts=4
 set sts=4
 set et
 set sta
-" indent format
+
+" highlight current line
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+" highlight search result
+set hlsearch
+
+" tell me where the cursor is located in the file
+set ruler
 
 filetype plugin indent on
 "allow plugin and indent function
