@@ -11,6 +11,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle "pangloss/vim-javascript"
+Bundle "mattn/zencoding-vim"
 
 " indent format
 set sw=4
