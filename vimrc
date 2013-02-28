@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 
 Bundle "pangloss/vim-javascript"
 Bundle "mattn/zencoding-vim"
+Bundle "msanders/snipmate.vim"
 
 " indent format
 set sw=4
