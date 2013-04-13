@@ -2,6 +2,12 @@
 set number
 set nocompatible
 
+" highlight current line
+set cursorline
+
+" ignore case when searching
+set ignorecase
+
 " Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -13,6 +19,7 @@ Bundle 'gmarik/vundle'
 Bundle "pangloss/vim-javascript"
 Bundle "mattn/zencoding-vim"
 Bundle "msanders/snipmate.vim"
+Bundle "wincent/Command-T"
 
 " indent format
 set sw=4
@@ -20,11 +27,6 @@ set ts=4
 set sts=4
 set et
 set sta
-
-" highlight current line
-:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " highlight search result
 set hlsearch
@@ -56,6 +58,10 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flaovr='latex'
 let g:Tex_MultipleCompileFormats='pdf'
 let mapleader='\'
+
+" change tabs
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 " ######### 自动补全括号、引号 ######### "
 inoremap ( <c-r>=OpenPair('(')<CR>
