@@ -8,6 +8,10 @@ set cursorline
 " ignore case when searching
 set ignorecase
 
+" use dot change tab spaces
+set list
+set listchars=tab:>.,trail:.
+
 " Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -20,6 +24,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "mattn/zencoding-vim"
 Bundle "msanders/snipmate.vim"
 Bundle "wincent/Command-T"
+Bundle "kevinw/pyflakes-vim"
 
 " indent format
 set sw=4
@@ -62,6 +67,12 @@ let mapleader='\'
 " change tabs
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+" STOP using arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
 
 " ######### 自动补全括号、引号 ######### "
 inoremap ( <c-r>=OpenPair('(')<CR>
