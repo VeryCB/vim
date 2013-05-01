@@ -25,6 +25,7 @@ Bundle "mattn/zencoding-vim"
 Bundle "msanders/snipmate.vim"
 Bundle "wincent/Command-T"
 Bundle "kevinw/pyflakes-vim"
+Bundle "Lokaltog/vim-powerline"
 
 " indent format
 set sw=4
