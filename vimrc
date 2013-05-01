@@ -25,7 +25,9 @@ Bundle "mattn/zencoding-vim"
 Bundle "msanders/snipmate.vim"
 Bundle "wincent/Command-T"
 Bundle "kevinw/pyflakes-vim"
-Bundle "Lokaltog/vim-powerline"
+
+" enable powerline
+" let g:Powerline_symbols = 'fancy'
 
 " indent format
 set sw=4
