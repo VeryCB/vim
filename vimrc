@@ -1,6 +1,11 @@
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" ========== General Config ==========
+
 " show line number
 set number
-set nocompatible
 
 " highlight current line
 set cursorline
@@ -11,23 +16,6 @@ set ignorecase
 " use dot change tab spaces
 set list
 set listchars=tab:>.,trail:.
-
-" Vundle
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
-Bundle "pangloss/vim-javascript"
-Bundle "mattn/zencoding-vim"
-Bundle "msanders/snipmate.vim"
-Bundle "wincent/Command-T"
-Bundle "kevinw/pyflakes-vim"
-
-" enable powerline
-" let g:Powerline_symbols = 'fancy'
 
 " indent format
 set sw=4
@@ -42,29 +30,69 @@ set hlsearch
 " tell me where the cursor is located in the file
 set ruler
 
-filetype plugin indent on
-"allow plugin and indent function
-
-syntax on
-"syntax highlight
-
-set guifont=Monaco:h12
-
-"set transparency=15
-
-colorscheme molokai
-
 " encoding
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
+" store lots of :cmdline history
+set history=1000
+
+" show current mode down the bottom
+set showmode
+
+" reload files changed outside vim
+set autoread
+
+" turn off swap files
+set noswapfile
+set nobackup
+set nowb
+
+"syntax highlight
+syntax on
+
+set guifont=Monaco:h12
+
+" ========== Plugin ==========
+
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+Bundle "mattn/zencoding-vim"
+Bundle "msanders/snipmate.vim"
+Bundle "kevinw/pyflakes-vim"
+Bundle "kien/ctrlp.vim"
+Bundle "vim-scripts/vimwiki"
+Bundle "pangloss/vim-javascript"
+Bundle "tomasr/molokai"
+Bundle "scrooloose/nerdtree"
+
+colorscheme molokai
+
+"allow plugin and indent function
+filetype plugin indent on
+
+" Vimwiki
+" 使用鼠标映射
+let g:vimwiki_use_mouse = 1
+" 不要将驼峰式词组作为 Wiki 词条
+let g:vimwiki_camel_case = 0
+let g:vimwiki_list = [{
+\ 'path': '~/dropbox/develop/vimwiki/',
+\ 'path_html': '~/dropbox/develop/octopress/source/wiki/',
+\ 'auto_export': 1}]
+
 " F10 for nerdtree
 nnoremap <silent> <F10> :NERDTreeToggle<CR>
 
-" set for VIM-LATEX
-set grepprg=grep\ -nH\ $*
-let g:tex_flaovr='latex'
-let g:Tex_MultipleCompileFormats='pdf'
+" ========== Keys ==========
+
+" leader key
 let mapleader='\'
 
 " change tabs
@@ -156,17 +184,3 @@ function! CompleteQuote(quote)
         return a:quote . a:quote . "\<Left>"
     endif
 endfunction
-
-" ######### VimWiki 写作助手 ######### "
-
-" 使用鼠标映射
-
-let g:vimwiki_use_mouse = 1
-
-" 不要将驼峰式词组作为 Wiki 词条
-let g:vimwiki_camel_case = 0
-
-let g:vimwiki_list = [{
-\ 'path': '~/dropbox/develop/vimwiki/',
-\ 'path_html': '~/dropbox/develop/octopress/source/wiki/',
-\ 'auto_export': 1}]
