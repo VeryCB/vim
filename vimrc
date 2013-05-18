@@ -71,6 +71,7 @@ Bundle "vim-scripts/vimwiki"
 Bundle "pangloss/vim-javascript"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdtree"
+Bundle "skammer/vim-css-color"
 
 colorscheme molokai
 
@@ -98,6 +99,9 @@ let mapleader='\'
 " change tabs
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+" Run python script
+nnoremap <Leader>py :!python %<CR>
 
 " STOP using arrow keys
 map <up> <nop>
