@@ -40,6 +40,9 @@ set history=1000
 " show current mode down the bottom
 set showmode
 
+" Always show the statusline
+set laststatus=2
+
 " reload files changed outside vim
 set autoread
 
@@ -72,6 +75,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdtree"
 Bundle "skammer/vim-css-color"
+Bundle "Lokaltog/vim-powerline"
 
 colorscheme molokai
 
@@ -85,7 +89,7 @@ let g:vimwiki_use_mouse = 1
 let g:vimwiki_camel_case = 0
 let g:vimwiki_list = [{
 \ 'path': '~/dropbox/develop/vimwiki/',
-\ 'path_html': '~/dropbox/develop/octopress/source/wiki/',
+\ 'path_html': '~/dropbox/develop/blog/deploy/wiki/',
 \ 'auto_export': 1}]
 
 " F10 for nerdtree
