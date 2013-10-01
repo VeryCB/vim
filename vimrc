@@ -73,8 +73,6 @@ Bundle "kien/ctrlp.vim"
 Bundle "vim-scripts/vimwiki"
 Bundle "pangloss/vim-javascript"
 Bundle "tomasr/molokai"
-Bundle "scrooloose/nerdtree"
-Bundle "skammer/vim-css-color"
 Bundle "Lokaltog/vim-powerline"
 
 colorscheme molokai
