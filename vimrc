@@ -70,7 +70,6 @@ Bundle "mattn/zencoding-vim"
 Bundle "msanders/snipmate.vim"
 Bundle "kevinw/pyflakes-vim"
 Bundle "kien/ctrlp.vim"
-Bundle "vim-scripts/vimwiki"
 Bundle "pangloss/vim-javascript"
 Bundle "tomasr/molokai"
 Bundle "Lokaltog/vim-powerline"
@@ -79,19 +78,6 @@ colorscheme molokai
 
 "allow plugin and indent function
 filetype plugin indent on
-
-" Vimwiki
-" 使用鼠标映射
-let g:vimwiki_use_mouse = 1
-" 不要将驼峰式词组作为 Wiki 词条
-let g:vimwiki_camel_case = 0
-let g:vimwiki_list = [{
-\ 'path': '~/dropbox/develop/vimwiki/',
-\ 'path_html': '~/dropbox/develop/blog/deploy/wiki/',
-\ 'auto_export': 1}]
-
-" F10 for nerdtree
-nnoremap <silent> <F10> :NERDTreeToggle<CR>
 
 " ========== Keys ==========
 
